@@ -19,7 +19,7 @@ a {
 }
 
 #messages {
-	width: 690px;
+	width: 600px;
 	height: 300px;
 	overflow: auto;
 	background-color: #eee;
@@ -29,7 +29,7 @@ a {
 
 #room-list {
 	float: right;
-	width: 100px;
+	width: 190px;
 	height: 300px;
 	overflow: auto;
 }

@@ -7,7 +7,6 @@ function divSystemContentElement(message) {
 };
 
 function processUserInput(chatApp, socket) {
-	debugger;
 	var message = $('#send-message').val();
 	var systemMessage;
 
@@ -73,7 +72,6 @@ $(document).ready(function() {
 
 	$('#send-form').submit(function() {
 		processUserInput(chatApp, socket);
-		console.log("I was pressed")
 		return false;
 	});
 });

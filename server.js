@@ -6,7 +6,6 @@ var cache = {};
 
 var server = http.createServer(function(request, response) {
 	var filePath = false;
-	console.log("in server", request.url);
 	debugger;
 	if (request.url == '/') {
 		filePath = 'public/index.html';
@@ -40,7 +39,6 @@ function serveStatic(response, cache, absPath) {
 			if (exists) {
 				fs.readFile(absPath, function(err, data) {
 					if (err) {
-						console.log("in serveStatic function nested if");
 						send404(response);
 					} else {
 						cache[absPath] = data;
